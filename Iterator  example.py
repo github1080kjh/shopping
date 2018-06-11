@@ -10,7 +10,7 @@ def show_time(func):   # 装饰器函数
 
     # this is source function  ,need add some new functions now
     return inner   
-@show_time      # 对原函数名进行重新赋值
+@show_time      # 对原函数名进行重新赋值  @show_time = (add = show_time(add))
 def add(x, y):   # 原函数
     result = x + y
     time.sleep(3)
